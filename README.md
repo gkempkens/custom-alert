@@ -26,7 +26,11 @@ To use the alertbox just:
 To call the alert: 
 
 alert('alert this message!');
+
 alert('alert this message!', { header: { title: 'alert title'} });
+
 alert('alert this message!', { header: { title: 'alert title'}, footer: { buttons: [ { text:'close' } ] } });
+
 alert('alert this message!', { main: { class:'abox__box' }, header: { title: 'alert title'}, footer: { buttons: [ { text:'close', action:'_this.close()' } ] } });
+
 alert('alert this message!', { usecontainer: false, insidefirst:false, main: { cssclass:'abox__box-alt' }, header: { title: 'alert title'}, footer: { buttons: [ { text:'ok', action:'_this.close()', cssclass:'abox__btn', element:'button' }, { text:'cancel', action:'console.log("cancel")', element:'div' } ] } });
